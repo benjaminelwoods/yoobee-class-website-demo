@@ -1,53 +1,686 @@
-/*
-Error: File to import not found or unreadable: variables.
-       Load path: C:/Users/BEn/Desktop/website-demo/scss
-        on line 18 of C:\Users\BEn\Desktop\website-demo\scss\styles.scss
-
-13: img{
-14:     max-width: 100%;
-15: }
-16: 
-17: 
-18: @import 'variables';
-19: @import 'grid';
-
-Backtrace:
-C:\Users\BEn\Desktop\website-demo\scss\styles.scss:18
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: variables.\A        Load path: C:/Users/BEn/Desktop/website-demo/scss\A         on line 18 of C:\Users\BEn\Desktop\website-demo\scss\styles.scss\A \A 13: img{\A 14:     max-width: 100%;\A 15: }\A 16: \A 17: \A 18: @import 'variables';\A 19: @import 'grid';"; }
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+/* line 28, ../scss/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 33, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 38, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 42, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 46, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 50, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 56, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 61, ../scss/_reset.scss */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 69, ../scss/_reset.scss */
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 77, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 87, ../scss/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 101, ../scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 111, ../scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 122, ../scss/_reset.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 132, ../scss/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 140, ../scss/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 150, ../scss/_reset.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 159, ../scss/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 167, ../scss/_reset.scss */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 175, ../scss/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 187, ../scss/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 201, ../scss/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 216, ../scss/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 228, ../scss/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 243, ../scss/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 256, ../scss/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 268, ../scss/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 282, ../scss/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 294, ../scss/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 303, ../scss/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 314, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 323, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 328, ../scss/_reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 337, ../scss/_reset.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 342, ../scss/_reset.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 347, ../scss/_reset.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 351, ../scss/_reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 357, ../scss/_reset.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 361, ../scss/_reset.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 3, ../scss/styles.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, ../scss/styles.scss */
+body {
+  font-family: 'Open Sans', 'Lato', 'Helvetica', sans-serif;
+}
+
+/* line 13, ../scss/styles.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 10, ../scss/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 15, ../scss/_grid.scss */
+.row:hover {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 23, ../scss/_grid.scss */
+.col1 {
+  width: 8.3333333333%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col2 {
+  width: 16.6666666667%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col3 {
+  width: 25%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col4 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col5 {
+  width: 41.6666666667%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col6 {
+  width: 50%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col7 {
+  width: 58.3333333333%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col8 {
+  width: 66.6666666667%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col9 {
+  width: 75%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col10 {
+  width: 83.3333333333%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col11 {
+  width: 91.6666666667%;
+  float: left;
+}
+
+/* line 23, ../scss/_grid.scss */
+.col12 {
+  width: 100%;
+  float: left;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 31, ../scss/_grid.scss */
+  .colM1 {
+    width: 8.3333333333%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM3 {
+    width: 25%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM6 {
+    width: 50%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM9 {
+    width: 75%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .colM12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 40, ../scss/_grid.scss */
+  .colL1 {
+    width: 8.3333333333%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL3 {
+    width: 25%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL6 {
+    width: 50%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL9 {
+    width: 75%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .colL12 {
+    width: 100%;
+  }
+}
+/* line 21, ../scss/styles.scss */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 1, ../scss/_nav.scss */
+.navbar {
+  background-color: tomato;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 11, ../scss/_nav.scss */
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 18, ../scss/_nav.scss */
+.navLogo {
+  width: 150px;
+}
+
+/* line 22, ../scss/_nav.scss */
+.navList {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 29, ../scss/_nav.scss */
+.listItem {
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

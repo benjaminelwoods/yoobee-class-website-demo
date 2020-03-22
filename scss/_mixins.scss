@@ -1,0 +1,38 @@
+@mixin divStyle {
+    border: 10px solid black;
+    float: left;
+    text-align: center;
+}
+
+@mixin fullCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fullCenterLeft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin fullCenterRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+@mixin clear {
+    &::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+}
+
+@mixin backCenter {
+    background-position: center;
+    background-size: cover;
+}

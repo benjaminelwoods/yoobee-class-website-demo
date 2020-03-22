@@ -12,7 +12,11 @@ $lWidth: 900px;
 }
 
 .row {
-    @include clear;
+    &:hover {
+        clear: both;
+        display: block;
+        content: '';
+    }
 }
 
 @for $i from 1 through $columns {
